@@ -91,4 +91,5 @@ The dataset is intentionally small, and the evaluation uses simple automated sig
 
 ## author
 
-Independent research into LLM reliability, RAG, and AI security.
+Za1d3v
+research into LLM reliability, RAG, and AI security.
