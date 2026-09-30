@@ -1,27 +1,27 @@
 # scaling-invent
-# RAG Hallucination Mini Study
+# rag hallucination mini study
 
 A small experiment investigating whether Retrieval-Augmented Generation (RAG) reduces hallucinations in large language models.
 
-## Research Question
+## research question
 
 > Does providing an LLM with relevant retrieved information reduce unsupported or incorrect answers?
 
-## Experiment
+## experiment
 
 This project compares two approaches:
 
-### 1. LLM Only
+### 1. llm 0nly
 
 The question is sent directly to the language model.
 
-### 2. RAG
+### 2. rag
 
 Relevant information is retrieved from a small knowledge base and provided to the language model before answering.
 
 The same questions are tested against both approaches.
 
-## Dataset
+## dataset
 
 The experiment contains:
 
@@ -34,7 +34,7 @@ The knowledge base contains fictional information about a company called Acme Co
 
 Using fictional information makes the experiment reproducible and avoids relying on potentially changing external information.
 
-## Metrics
+## metrics
 
 The experiment records:
 
@@ -45,7 +45,7 @@ The experiment records:
 
 These metrics are intended as experimental signals rather than definitive measures of factuality.
 
-## Example
+## example
 
 Without RAG:
 
@@ -68,7 +68,7 @@ The knowledge base does not contain information identifying
 Acme Corporation's CEO.
 ```
 
-## Why This Matters
+## why this matters
 
 RAG is often described as a way to reduce hallucinations by grounding an LLM in external information.
 
@@ -76,7 +76,7 @@ This experiment tests a more specific question:
 
 > Does retrieval actually prevent hallucination, or can an LLM still produce unsupported information even when relevant context is provided?
 
-## Running the Experiment
+## running the experiment
 
 Install the OpenAI Python library:
 
@@ -102,12 +102,12 @@ Run:
 python experiment.py
 ```
 
-## Limitations
+## limitations
 
 This is a small exploratory experiment.
 
 The dataset is intentionally small, and the evaluation uses simple automated signals. A larger study should use more questions, multiple models, semantic retrieval, human evaluation, and more rigorous factuality metrics.
 
-## Author
+## author
 
 Independent research into LLM reliability, RAG, and AI security.
