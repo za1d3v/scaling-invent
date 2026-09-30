@@ -1,5 +1,4 @@
 # scaling-invent
-# rag hallucination mini study
 
 A small experiment investigating whether Retrieval-Augmented Generation (RAG) reduces hallucinations in large language models.
 
@@ -25,10 +24,10 @@ The same questions are tested against both approaches.
 
 The experiment contains:
 
-* Answerable questions
-* Unanswerable questions
-* Ambiguous questions
-* Adversarial questions
+- Answerable questions
+- Unanswerable questions
+- Ambiguous questions
+- Adversarial questions
 
 The knowledge base contains fictional information about a company called Acme Corporation.
 
@@ -38,10 +37,10 @@ Using fictional information makes the experiment reproducible and avoids relying
 
 The experiment records:
 
-* Whether the expected information appears in the answer
-* Whether the answer contains an abstention
-* Whether the RAG system retrieved relevant information
-* Potential hallucination cases
+- Whether the expected information appears in the answer
+- Whether the answer contains an abstention
+- Whether the RAG system retrieved relevant information
+- Potential hallucination cases
 
 These metrics are intended as experimental signals rather than definitive measures of factuality.
 
@@ -78,28 +77,10 @@ This experiment tests a more specific question:
 
 ## running the experiment
 
-Install the OpenAI Python library:
+Install the required Python libraries:
 
 ```bash
-pip install openai
-```
-
-Set your API key:
-
-```bash
-export OPENAI_API_KEY="your-api-key"
-```
-
-Windows PowerShell:
-
-```powershell
-$env:OPENAI_API_KEY="your-api-key"
-```
-
-Run:
-
-```bash
-python experiment.py
+pip install openai scikit-learn
 ```
 
 ## limitations
